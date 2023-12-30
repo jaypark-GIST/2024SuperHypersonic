@@ -1,0 +1,21 @@
+Submitted by: Dongseok Kim, Seoul National University (SNU), dskim@snu.ac.kr
+
+Solver: Deneb, High-order CFD solver based on DRM-DG method
+Results provide for P1 meshes RQ50, RQ100, RQ150, RQ200, RQ250, RQ300, RQ350, RQ400, RQ450, RQ500
+Run with 2 different approximation orders: DG-P2 and DG-P3, which are 3rd and 4th-order, respectively.
+Numerical flux: Roe's FDS scheme
+Shock-capturing: Shock-capturing PID (SPID) method
+Temporal discretization: explicit 3rd-order TVDRK method with CFL=0.9
+
+Directory layout is as follows:
+[mesh]
+-[approximation order]
+
+Data for lines 1-3 are provided in Tecplot ascii format
+
+Images were created in the following manner:
+-Tecplot used to compute gradient of density at each node
+-Tecplot used to compute Schlieren value at each node
+-vortexFull.png is the entire domain [0,2] x [0,1]
+-vortexZoom.png is the subdomain [0.9,1.2] x [0.33,0.63]
+-All images are grayscale using the 'binary' colormap in imshow and the colormap ranges from 0.05 to 2.4.
