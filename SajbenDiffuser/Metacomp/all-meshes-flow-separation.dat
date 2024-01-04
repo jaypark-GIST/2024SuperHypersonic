@@ -1,0 +1,5 @@
+# mesh, separation location (meters)
+coarse     0.0883
+medium     0.0917
+fine       0.0923
+ultrafine  0.0924
